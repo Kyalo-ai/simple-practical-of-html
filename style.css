@@ -1,0 +1,113 @@
+/* Consistent background and font for all pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Semantic Navigation Menu & Hover Effect */
+header {
+    background-color: #2c3e50;
+    padding: 15px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 400px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Task 2: Centre-align the Bio-Data form */
+.bio-form-container {
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.bio-form-container input, 
+.bio-form-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.bio-form-container .radio-group {
+    margin-bottom: 10px;
+}
+.bio-form-container button {
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Task 3: CSS Media Query for <= 768px */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        width: 90%;
+        padding: 10px;
+    }
+    .bio-form-container {
+        width: 90%; /* Makes form responsive on small screens */
+    }
+}
